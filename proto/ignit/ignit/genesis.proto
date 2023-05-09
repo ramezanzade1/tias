@@ -1,0 +1,12 @@
+syntax = "proto3";
+package ignit.ignit;
+
+import "gogoproto/gogo.proto";
+import "ignit/ignit/params.proto";
+
+option go_package = "ignit/x/ignit/types";
+
+// GenesisState defines the ignit module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

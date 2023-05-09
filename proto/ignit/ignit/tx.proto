@@ -1,0 +1,7 @@
+syntax = "proto3";
+package ignit.ignit;
+
+option go_package = "ignit/x/ignit/types";
+
+// Msg defines the Msg service.
+service Msg {}
